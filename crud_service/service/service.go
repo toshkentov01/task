@@ -46,6 +46,10 @@ func (s *CrudService) GetPost(ctx context.Context, request *crudPb.GetPostReques
 		PostId: request.PostId,
 	})
 
+	if err != nil {
+		return nil, errorHandler(s.logger, err, "Failed to get post: "+err.Error())
+	}
+
 	return &crudPb.Post{
 		Id:     result.Id,
 		UserId: result.UserId,

@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 14:42:51 2022
+# Make data base, printed on Tue Jun 14 16:49:53 2022
 
 # Variables
 
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /snap/code/98/usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -83,7 +85,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = uz_UZ.UTF-8
 # environment
-VSCODE_CWD = /home/sardor/go/src/github.com/sardortoshkentov/task
+VSCODE_CWD = /home/sardor/go/src/github.com/sardortoshkentov/task/crud_service
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # environment
@@ -91,7 +93,7 @@ GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/go/bin:/home/sardor/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /usr/local/go/bin:/home/sardor/go/bin:/home/sardor/go/bin:/home/sardor/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # makefile (from 'Makefile', line 7)
 IMG_NAME = ${APP}
 # environment
@@ -107,7 +109,7 @@ SNAP = /snap/code/98
 # environment
 GOPATH = /home/sardor/go
 # makefile (from 'Makefile', line 5)
-PKG_LIST := github.com/toshkentov01/task/crud_service/cmd github.com/toshkentov01/task/crud_service/config github.com/toshkentov01/task/crud_service/genproto/crud_service github.com/toshkentov01/task/crud_service/pkg/logger github.com/toshkentov01/task/crud_service/service github.com/toshkentov01/task/crud_service/service/grpc_client
+PKG_LIST := github.com/toshkentov01/task/crud_service/cmd github.com/toshkentov01/task/crud_service/config github.com/toshkentov01/task/crud_service/genproto/crud_service github.com/toshkentov01/task/crud_service/genproto/data_service github.com/toshkentov01/task/crud_service/pkg/logger github.com/toshkentov01/task/crud_service/service github.com/toshkentov01/task/crud_service/service/grpc_client
 # environment
 SNAP_VERSION = 4af164ea
 # environment
@@ -151,7 +153,7 @@ SSH_AGENT_PID = 2318
 # makefile (from '.env', line 6)
 DATA_SERVICE_HOST = localhost
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
 # environment
 GTK_MODULES = gail:atk-bridge
 # makefile (from '.env', line 5)
@@ -194,6 +196,8 @@ POSTGRES_HOST = localhost
 LC_TIME = uz_UZ.UTF-8
 # environment
 SNAP_REAL_HOME = /home/sardor
+# environment
+VSCODE_GIT_IPC_HANDLE = /run/user/1000/vscode-git-d078761442.sock
 # makefile (from '.env', line 3)
 POSTGRES_PORT = 5432
 # environment
@@ -207,13 +211,13 @@ QT_IM_MODULE = ibus
 # environment
 SNAP_USER_DATA = /home/sardor/snap/code/98
 # environment
-SHLVL = 1
+SHLVL = 3
 # makefile (from '.env', line 4)
 LOG_LEVEL = debug
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8ea563bf-8099-4c80-ba5c-25e4e8a66038.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dbd26d13-1814-4a03-a201-a8866f787ed7.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -237,13 +241,19 @@ APP = $(shell basename ${CURRENT_DIR})
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/sardor
+OLDPWD = /home/sardor/go/src/github.com/sardortoshkentov/task
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+TERM_PROGRAM = vscode
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-ea0015ee-1.68.0-main.sock
+# environment
+VSCODE_GIT_ASKPASS_NODE = /snap/code/98/usr/share/code/code
 # makefile
 MAKEFLAGS = pqrR
 # makefile (from 'Makefile', line 10)
@@ -252,6 +262,8 @@ ENV_TAG = latest
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 1.68.0
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -259,11 +271,15 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = uz_UZ.UTF-8
 # environment
+NO_AT_BRIDGE = 1
+# environment
 LC_IDENTIFICATION = uz_UZ.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
 # 'override' directive
 .SHELLSTATUS := 0
+# environment
+GIT_ASKPASS = /snap/code/98/usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
 # environment
@@ -285,6 +301,7 @@ ENVIRONMENT = develop
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
+ 
 GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e25faf46_fb8f_4149_a20e_69af6ef225b1
 # automatic
 ^F = $(notdir $^)
@@ -315,7 +332,7 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 125034
 # variable set hash-table stats:
-# Load=151/1024=15%, Rehash=0, Collisions=27/182=15%
+# Load=159/1024=16%, Rehash=0, Collisions=28/190=15%
 
 # Pattern-specific Variable Values
 
@@ -401,7 +418,6 @@ delete-branches:
 #  recipe to execute (from 'Makefile', line 69):
 	${CURRENT_DIR}/scripts/delete-branches.sh
 
- 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
@@ -546,6 +562,6 @@ vendor:
 # strcache performance: lookups = 81 / hit rate = 43%
 # hash-table stats:
 # Load=46/8192=1%, Rehash=0, Collisions=1/81=1%
-# Finished Make data base on Tue Jun 14 14:42:51 2022
+# Finished Make data base on Tue Jun 14 16:49:53 2022
 
  
