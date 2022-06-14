@@ -1,0 +1,1 @@
+protoc --proto_path=task-protos/crud_service -I $GOPATH/src/github.com/gogo/protobuf/gogoproto  --gofast_out=plugins=grpc:. crud.proto
