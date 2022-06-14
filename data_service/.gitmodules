@@ -1,0 +1,3 @@
+[submodule "task-protos"]
+	path = task-protos
+	url = git@github.com:toshkentov01/task-protos.git
