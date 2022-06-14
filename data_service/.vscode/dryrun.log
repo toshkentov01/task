@@ -1,5 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/sardor/go/src/github.com/sardortoshkentov/task/data_service'
+ 
 cp ./.env.example ./.env
 make: Leaving directory '/home/sardor/go/src/github.com/sardortoshkentov/task/data_service'
  

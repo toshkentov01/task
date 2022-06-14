@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 12:07:37 2022
+# Make data base, printed on Tue Jun 14 14:49:10 2022
 
 # Variables
 
@@ -83,7 +83,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = uz_UZ.UTF-8
 # environment
-VSCODE_CWD = /home/sardor/go/src/github.com/sardortoshkentov/task
+VSCODE_CWD = /home/sardor/go/src/gitlab.com/sardortoshkentov/rko
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # makefile (from '.env', line 6)
@@ -217,7 +217,7 @@ POSTGRES_DB = task_db
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-78c1efa1-6d3b-4e98-a041-ee459837de67.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3ae627a5-f0c1-43e8-81a2-cc5796c3e3f7.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -241,7 +241,7 @@ APP = $(shell basename ${CURRENT_DIR})
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/sardor
+OLDPWD = /home/sardor/go/src/gitlab.com/sardortoshkentov
 # default
 .VARIABLES := 
 # automatic
@@ -263,6 +263,8 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = uz_UZ.UTF-8
 # environment
+NO_AT_BRIDGE = 1
+# environment
 LC_IDENTIFICATION = uz_UZ.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
@@ -270,6 +272,7 @@ QT_ACCESSIBILITY = 1
 .SHELLSTATUS := 0
 # default
 MAKEFILES := 
+ 
 # environment
 SNAP_COOKIE = 4c1g3ofd9mmAsS9k5sx4isJjpPTkMS4Tq7QNVBos8tFY_MwUDoAc
 # environment
@@ -287,11 +290,11 @@ ENVIRONMENT = develop
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e25faf46_fb8f_4149_a20e_69af6ef225b1
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/73e188e7_dbaf_49aa_8600_392d632150e8
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.9600
+GNOME_TERMINAL_SERVICE = :1.12165
 # default
 SUFFIXES := 
 # environment
@@ -317,7 +320,7 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 125034
 # variable set hash-table stats:
-# Load=152/1024=15%, Rehash=0, Collisions=27/183=15%
+# Load=153/1024=15%, Rehash=0, Collisions=27/184=15%
 
 # Pattern-specific Variable Values
 
@@ -341,7 +344,6 @@ migrate-jeyran: set-env
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 33):
 	env POSTGRES_HOST=${POSTGRES_HOST} env POSTGRES_PORT=${POSTGRES_PORT} env POSTGRES_USER=${POSTGRES_USER} env POSTGRES_PASSWORD=${POSTGRES_PASSWORD} env POSTGRES_DB=${POSTGRES_DB} ./scripts/migrate-jeyran.sh
- 
 
 pull-proto-module:
 #  Implicit rule search has not been done.
@@ -555,6 +557,6 @@ vendor:
 # strcache performance: lookups = 85 / hit rate = 42%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/85=1%
-# Finished Make data base on Tue Jun 14 12:07:37 2022
+# Finished Make data base on Tue Jun 14 14:49:10 2022
 
  
