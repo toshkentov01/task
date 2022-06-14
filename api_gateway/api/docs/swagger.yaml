@@ -1,0 +1,170 @@
+basePath: /api
+definitions:
+  models.ListPostsModel:
+    properties:
+      count:
+        type: integer
+      results:
+        items:
+          $ref: '#/definitions/models.PostModel'
+        type: array
+    type: object
+  models.PostModel:
+    properties:
+      body:
+        type: string
+      id:
+        type: integer
+      title:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  models.Response:
+    properties:
+      data: {}
+      error:
+        type: boolean
+    type: object
+  models.UpdatePostModel:
+    properties:
+      body:
+        type: string
+      post_id:
+        type: integer
+      title:
+        type: string
+    type: object
+info:
+  contact:
+    email: toshkentovsardor.2003@gmail.com
+    name: Sardor Toshkentov
+  description: This is an auto-generated API Docs for TASK.
+  termsOfService: http://swagger.io/terms/
+  title: TASK API
+  version: "0.1"
+paths:
+  /v1/post/delete/{post_id}/:
+    delete:
+      consumes:
+      - application/json
+      description: DeletePost API used for deleting a post
+      parameters:
+      - description: Post ID
+        in: path
+        name: post_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Response'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Response'
+      summary: DeletePost a post
+      tags:
+      - post
+  /v1/post/get/{post_id}/:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Post ID
+        in: path
+        name: post_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.PostModel'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Response'
+      summary: Get a single post
+      tags:
+      - post
+  /v1/post/list/:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: limit
+        in: query
+        name: limit
+        type: integer
+      - description: page
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ListPostsModel'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Response'
+      summary: Get list of posts
+      tags:
+      - post
+  /v1/post/update/:
+    put:
+      consumes:
+      - application/json
+      description: UpdatePost API used for updating a post
+      parameters:
+      - description: Update Post Reuqest Model
+        in: body
+        name: updatePostRequest
+        required: true
+        schema:
+          $ref: '#/definitions/models.UpdatePostModel'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Response'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.Response'
+      summary: Update a post
+      tags:
+      - post
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

@@ -1,0 +1,10 @@
+p, any, /swagger/*, GET
+
+p, unauthorized, /api/v1/post/list/, GET
+p, unauthorized, /api/v1/post/get/:post_id/, GET
+
+p, unauthorized, /api/v1/post/update/, PUT
+
+p, unauthorized, /api/v1/post/delete/:post_id/, DELETE
+
+g, unauthorized, any
