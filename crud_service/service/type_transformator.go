@@ -5,6 +5,7 @@ import (
 	crudPb "github.com/toshkentov01/task/crud_service/genproto/crud_service"
 )
 
+// Transformator ...
 func Transformator(result []*dataPb.Post) []*crudPb.Post {
 	posts := result
 	results := []*crudPb.Post{}
