@@ -6,4 +6,7 @@ THEN YOU SHOULD CLONE THE protos, which are submodules
 clone with SSH --> [git@github.com:toshkentov01/task-protos.git]
 clone with HTTPS --> [https://github.com/toshkentov01/task-protos.git]
 
-AFTER THAN YOU CAN RUN THE PROGRAMM
+AFTER THAT YOU CAN RUN THE PROGRAM. 
+
+AFTER RUNNING DATA_SERVICE, THE POSTS FROM OPEN API WILL BE ON YOUR DATABASE APPROXIMATELY
+AFTER 6-10 SECONDS (1000 DATA)
