@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 08:59:04 2022
+# Make data base, printed on Tue Jun 14 14:42:51 2022
 
 # Variables
 
@@ -107,7 +107,7 @@ SNAP = /snap/code/98
 # environment
 GOPATH = /home/sardor/go
 # makefile (from 'Makefile', line 5)
-PKG_LIST := github.com/toshkentov01/task/crud_service/cmd github.com/toshkentov01/task/crud_service/config github.com/toshkentov01/task/crud_service/genproto/crud_service
+PKG_LIST := github.com/toshkentov01/task/crud_service/cmd github.com/toshkentov01/task/crud_service/config github.com/toshkentov01/task/crud_service/genproto/crud_service github.com/toshkentov01/task/crud_service/pkg/logger github.com/toshkentov01/task/crud_service/service github.com/toshkentov01/task/crud_service/service/grpc_client
 # environment
 SNAP_VERSION = 4af164ea
 # environment
@@ -213,7 +213,7 @@ LOG_LEVEL = debug
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e099f046-f91e-4098-8cfd-05239167607e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8ea563bf-8099-4c80-ba5c-25e4e8a66038.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -237,7 +237,7 @@ APP = $(shell basename ${CURRENT_DIR})
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/sardor/go/src/github.com/sardortoshkentov
+OLDPWD = /home/sardor
 # default
 .VARIABLES := 
 # automatic
@@ -258,8 +258,6 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # environment
 LC_PAPER = uz_UZ.UTF-8
-# environment
-NO_AT_BRIDGE = 1
 # environment
 LC_IDENTIFICATION = uz_UZ.UTF-8
 # environment
@@ -287,11 +285,11 @@ ENVIRONMENT = develop
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/8f76d872_1d67_4889_8b56_bfa04a462c7d
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e25faf46_fb8f_4149_a20e_69af6ef225b1
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.389
+GNOME_TERMINAL_SERVICE = :1.9600
 # default
 SUFFIXES := 
 # environment
@@ -315,9 +313,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4132
+VSCODE_PID = 125034
 # variable set hash-table stats:
-# Load=152/1024=15%, Rehash=0, Collisions=27/183=15%
+# Load=151/1024=15%, Rehash=0, Collisions=27/182=15%
 
 # Pattern-specific Variable Values
 
@@ -349,7 +347,6 @@ pull-proto-module:
 #  recipe to execute (from 'Makefile', line 36):
 	git submodule update --init --recursive
 
- 
 clear:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -404,6 +401,7 @@ delete-branches:
 #  recipe to execute (from 'Makefile', line 69):
 	${CURRENT_DIR}/scripts/delete-branches.sh
 
+ 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
@@ -548,6 +546,6 @@ vendor:
 # strcache performance: lookups = 81 / hit rate = 43%
 # hash-table stats:
 # Load=46/8192=1%, Rehash=0, Collisions=1/81=1%
-# Finished Make data base on Tue Jun 14 08:59:04 2022
+# Finished Make data base on Tue Jun 14 14:42:51 2022
 
  
