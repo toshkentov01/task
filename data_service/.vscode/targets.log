@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 14:49:10 2022
+# Make data base, printed on Tue Jun 14 16:50:44 2022
 
 # Variables
 
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /snap/code/98/usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -83,7 +85,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = uz_UZ.UTF-8
 # environment
-VSCODE_CWD = /home/sardor/go/src/gitlab.com/sardortoshkentov/rko
+VSCODE_CWD = /home/sardor/go/src/github.com/sardortoshkentov/task/data_service
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # makefile (from '.env', line 6)
@@ -93,7 +95,7 @@ GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/go/bin:/home/sardor/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /usr/local/go/bin:/home/sardor/go/bin:/home/sardor/go/bin:/home/sardor/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # makefile (from 'Makefile', line 7)
 IMG_NAME = ${APP}
 # environment
@@ -153,7 +155,7 @@ PWD = /home/sardor/go/src/github.com/sardortoshkentov/task/data_service
 # environment
 SSH_AGENT_PID = 2318
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
 # environment
 GTK_MODULES = gail:atk-bridge
 # makefile (from '.env', line 8)
@@ -196,6 +198,8 @@ POSTGRES_HOST = localhost
 LC_TIME = uz_UZ.UTF-8
 # environment
 SNAP_REAL_HOME = /home/sardor
+# environment
+VSCODE_GIT_IPC_HANDLE = /run/user/1000/vscode-git-d078761442.sock
 # makefile (from '.env', line 3)
 POSTGRES_PORT = 5432
 # environment
@@ -209,7 +213,7 @@ QT_IM_MODULE = ibus
 # environment
 SNAP_USER_DATA = /home/sardor/snap/code/98
 # environment
-SHLVL = 1
+SHLVL = 3
 # makefile (from '.env', line 7)
 LOG_LEVEL = debug
 # makefile (from '.env', line 4)
@@ -217,7 +221,7 @@ POSTGRES_DB = task_db
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3ae627a5-f0c1-43e8-81a2-cc5796c3e3f7.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7cd22e2e-6337-4cad-853d-7eed4a369cd1.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -241,13 +245,19 @@ APP = $(shell basename ${CURRENT_DIR})
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/sardor/go/src/gitlab.com/sardortoshkentov
+OLDPWD = /home/sardor/go/src/github.com/sardortoshkentov/task
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+TERM_PROGRAM = vscode
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-ea0015ee-1.68.0-main.sock
+# environment
+VSCODE_GIT_ASKPASS_NODE = /snap/code/98/usr/share/code/code
 # makefile
 MAKEFLAGS = pqrR
 # makefile (from 'Makefile', line 10)
@@ -256,6 +266,8 @@ ENV_TAG = latest
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 1.68.0
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -270,9 +282,10 @@ LC_IDENTIFICATION = uz_UZ.UTF-8
 QT_ACCESSIBILITY = 1
 # 'override' directive
 .SHELLSTATUS := 0
+# environment
+GIT_ASKPASS = /snap/code/98/usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
- 
 # environment
 SNAP_COOKIE = 4c1g3ofd9mmAsS9k5sx4isJjpPTkMS4Tq7QNVBos8tFY_MwUDoAc
 # environment
@@ -290,11 +303,11 @@ ENVIRONMENT = develop
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/73e188e7_dbaf_49aa_8600_392d632150e8
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e25faf46_fb8f_4149_a20e_69af6ef225b1
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.12165
+GNOME_TERMINAL_SERVICE = :1.9600
 # default
 SUFFIXES := 
 # environment
@@ -320,7 +333,7 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 125034
 # variable set hash-table stats:
-# Load=153/1024=15%, Rehash=0, Collisions=27/184=15%
+# Load=160/1024=16%, Rehash=0, Collisions=28/191=15%
 
 # Pattern-specific Variable Values
 
@@ -466,6 +479,7 @@ unit-tests: set-env
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 63):
 	go test -mod=vendor -v -cover -short ${PKG_LIST}
 
@@ -557,6 +571,6 @@ vendor:
 # strcache performance: lookups = 85 / hit rate = 42%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/85=1%
-# Finished Make data base on Tue Jun 14 14:49:10 2022
+# Finished Make data base on Tue Jun 14 16:50:44 2022
 
  
