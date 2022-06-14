@@ -4,12 +4,12 @@ import "github.com/toshkentov01/task/data_service/storage/post"
 
 // Interface ...
 type Interface interface {
-	Data() post.PostRepository
+	Data() post.Repository
 }
 
 // storage ...
 type storage struct {
-	dataRepo post.PostRepository
+	dataRepo post.Repository
 }
 
 // NewStorage ...
@@ -19,6 +19,6 @@ func NewStorage() Interface {
 	}
 }
 
-func (s storage) Data() post.PostRepository {
+func (s storage) Data() post.Repository {
 	return s.dataRepo
 }

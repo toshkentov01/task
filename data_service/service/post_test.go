@@ -55,7 +55,7 @@ func TestGetPost(t *testing.T) {
 		},
 		{
 			postID:      1111,
-			expectedErr: nil,
+			expectedErr: errs.ErrNotFound,
 		},
 	}
 

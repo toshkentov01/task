@@ -34,6 +34,7 @@ func (d dbPostModel) toModel() *dataPb.Post {
 	}
 }
 
+// DbData ...
 type DbData struct {
 	ID     int    `db:"id"`
 	UserID int    `db:"user_id"`

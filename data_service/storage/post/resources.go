@@ -4,8 +4,8 @@ import (
 	dataPb "github.com/toshkentov01/task/data_service/genproto/data_service"
 )
 
-// PostRepository ...
-type PostRepository interface {
+// Repository ...
+type Repository interface {
 	Reader
 	Writer
 }

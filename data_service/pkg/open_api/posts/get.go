@@ -73,6 +73,7 @@ func getSecondPartOfPosts(wg *sync.WaitGroup) {
 	}
 }
 
+// GetPosts ...
 func GetPosts() []Meta {
 	wg := sync.WaitGroup{}
 	wg.Add(2)

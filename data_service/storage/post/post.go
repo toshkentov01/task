@@ -18,7 +18,7 @@ type postRepo struct {
 }
 
 // NewPostRepo ...
-func NewPostRepo() PostRepository {
+func NewPostRepo() Repository {
 	return &postRepo{
 		db: postgres.DB(),
 	}
