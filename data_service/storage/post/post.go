@@ -2,6 +2,7 @@ package post
 
 import (
 	"database/sql"
+	"errors"
 
 	"github.com/jmoiron/sqlx"
 	"github.com/toshkentov01/task/data_service/pkg/errs"
@@ -84,6 +85,10 @@ func (pr *postRepo) ListPosts(limit, page uint32) (*dataPb.ListPostsResponse, er
 
 	rows, err := pr.db.Queryx(ListPostsSQL, limit, offset)
 	if err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return nil, errs.ErrNotFound
+		}
+
 		return nil, errs.ErrInternal
 	}
 

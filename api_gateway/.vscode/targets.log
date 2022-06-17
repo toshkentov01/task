@@ -8,12 +8,10 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 15:43:42 2022
+# Make data base, printed on Fri Jun 17 11:39:46 2022
 
 # Variables
 
-# environment
-VSCODE_GIT_ASKPASS_MAIN = /snap/code/98/usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -47,13 +45,13 @@ CURDIR := /home/sardor/go/src/github.com/sardortoshkentov/task/api_gateway
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/98
+SNAP_DATA = /var/snap/code/99
 # environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:54086
+JOURNAL_STREAM = 8:243480
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -79,39 +77,39 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 2138
+MANAGERPID = 2303
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = uz_UZ.UTF-8
 # environment
-VSCODE_CWD = /home/sardor/go/src/github.com/sardortoshkentov/task/api_gateway
+VSCODE_CWD = /home/sardor/go/src/gitlab.com/sardortoshkentov/rko/smec_onboarding_juridical_service
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/99/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/go/bin:/home/sardor/go/bin:/home/sardor/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /usr/local/go/bin:/home/sardor/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # makefile (from 'Makefile', line 7)
 IMG_NAME = ${APP}
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/toshkentov:@/tmp/.ICE-unix/2356,unix/toshkentov:/tmp/.ICE-unix/2356
+SESSION_MANAGER = local/toshkentov:@/tmp/.ICE-unix/25904,unix/toshkentov:/tmp/.ICE-unix/25904
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/sardor/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/98
+SNAP = /snap/code/99
 # environment
 GOPATH = /home/sardor/go
 # makefile (from 'Makefile', line 5)
-PKG_LIST := github.com/toshkentov01/task/api_gateway/config github.com/toshkentov01/task/api_gateway/genproto/crud_service github.com/toshkentov01/task/api_gateway/genproto/data_service github.com/toshkentov01/task/api_gateway/grpc_client
+PKG_LIST := github.com/toshkentov01/task/api_gateway/api/controllers github.com/toshkentov01/task/api_gateway/api/docs github.com/toshkentov01/task/api_gateway/api/error_handler github.com/toshkentov01/task/api_gateway/api/errors github.com/toshkentov01/task/api_gateway/api/models github.com/toshkentov01/task/api_gateway/api/routes github.com/toshkentov01/task/api_gateway/cmd github.com/toshkentov01/task/api_gateway/config github.com/toshkentov01/task/api_gateway/genproto/crud_service github.com/toshkentov01/task/api_gateway/genproto/data_service github.com/toshkentov01/task/api_gateway/grpc_client github.com/toshkentov01/task/api_gateway/pkg/jwt github.com/toshkentov01/task/api_gateway/pkg/middleware github.com/toshkentov01/task/api_gateway/pkg/utils
 # environment
-SNAP_VERSION = 4af164ea
+SNAP_VERSION = 30d9c6cd
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -121,9 +119,9 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 3f1e05b4307344e7866d17165f56dcf2
+INVOCATION_ID = 47242d6ba62248718bce4aaf99c7cee7
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/98/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 9)
@@ -149,9 +147,9 @@ PWD = /home/sardor/go/src/github.com/sardortoshkentov/task/api_gateway
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2318
+SSH_AGENT_PID = 2487
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
@@ -163,7 +161,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/sardor/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+VSCODE_CODE_CACHE_PATH = /home/sardor/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LOGNAME = sardor
 # environment
@@ -191,8 +189,6 @@ LC_TIME = uz_UZ.UTF-8
 # environment
 SNAP_REAL_HOME = /home/sardor
 # environment
-VSCODE_GIT_IPC_HANDLE = /run/user/1000/vscode-git-b33e60039e.sock
-# environment
 COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
@@ -201,19 +197,19 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/sardor/snap/code/98
+SNAP_USER_DATA = /home/sardor/snap/code/99
 # environment
-SHLVL = 2
+SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-203a5a0d-23e3-4692-a276-7c0f48588f9c.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-17305640-d7dc-4a96-aa2e-8f6d66508fbf.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = sardor
 # environment
-SNAP_REVISION = 98
+SNAP_REVISION = 99
 # environment
 LC_MONETARY = uz_UZ.UTF-8
 # makefile
@@ -231,19 +227,13 @@ APP = $(shell basename ${CURRENT_DIR})
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/sardor/go/src/github.com/sardortoshkentov/task
-# environment
-VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
-# environment
-TERM_PROGRAM = vscode
+OLDPWD = /home/sardor
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-ea0015ee-1.68.0-main.sock
-# environment
-VSCODE_GIT_ASKPASS_NODE = /snap/code/98/usr/share/code/code
+VSCODE_IPC_HOOK = /run/user/1000/vscode-ea0015ee-1.68.1-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # makefile (from 'Makefile', line 10)
@@ -252,8 +242,6 @@ ENV_TAG = latest
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
-# environment
-TERM_PROGRAM_VERSION = 1.68.0
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -261,15 +249,11 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = uz_UZ.UTF-8
 # environment
-NO_AT_BRIDGE = 1
-# environment
 LC_IDENTIFICATION = uz_UZ.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
 # 'override' directive
 .SHELLSTATUS := 0
-# environment
-GIT_ASKPASS = /snap/code/98/usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
 # environment
@@ -287,12 +271,11 @@ LC_ALL = C
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e25faf46_fb8f_4149_a20e_69af6ef225b1
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/72fb6917_6b3c_405d_8e17_c0c475e074ea
 # automatic
 ^F = $(notdir $^)
- 
 # environment
-GNOME_TERMINAL_SERVICE = :1.9600
+GNOME_TERMINAL_SERVICE = :1.219
 # default
 SUFFIXES := 
 # environment
@@ -310,15 +293,17 @@ APP_CMD_DIR = ${CURRENT_DIR}/cmd
 # default
 .RECIPEPREFIX := 
 # environment
+IM_CONFIG_CHECK_ENV = 1
+# environment
 LC_ADDRESS = uz_UZ.UTF-8
 # environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 125034
+VSCODE_PID = 38237
 # variable set hash-table stats:
-# Load=152/1024=15%, Rehash=0, Collisions=26/183=14%
+# Load=145/1024=14%, Rehash=0, Collisions=25/176=14%
 
 # Pattern-specific Variable Values
 
@@ -347,6 +332,7 @@ pull-proto-module:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 36):
 	git submodule update --init --recursive
 
@@ -582,7 +568,6 @@ docker.fiber.build:
 swag-gen:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 83):
 	echo ${REGISTRY}
@@ -613,6 +598,6 @@ docker.stop: docker.stop.fiber
 # strcache performance: lookups = 101 / hit rate = 46%
 # hash-table stats:
 # Load=54/8192=1%, Rehash=0, Collisions=1/101=1%
-# Finished Make data base on Tue Jun 14 15:43:42 2022
+# Finished Make data base on Fri Jun 17 11:39:46 2022
 
  
